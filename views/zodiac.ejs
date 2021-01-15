@@ -1,0 +1,110 @@
+<%- include("partials/header") -%>
+
+<div>
+  <h2 class="heading">
+    <%= title %> 
+  </h2>
+</div>
+
+<form action="/<%=name%>" method="POST">
+  <input type="hidden" name="yourZodiacChoosen" value="<%=choosenZodiac%>" >
+  <div class="container">
+    <div class="row">
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="aries" >
+          <img src="images/aries.jpg" alt="aries">
+          Aries
+        </label>
+      </div>
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="taurus" >
+          <img src="images/taurus.jpg" alt="taurus">
+          Taurus
+        </label>
+      </div>
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="gemini" >
+          <img src="images/gemini.jpg" alt="gemini">
+          Gemini
+        </label>
+      </div>
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="cancer" >
+          <img src="images/cancer.jpg" alt="cancer">
+          Cancer
+        </label>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="leo" >
+          <img src="images/leo.jpg" alt="leo">
+          Leo
+        </label>
+      </div>
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="virgo" >
+          <img src="images/virgo.jpg" alt="virgo">
+          Virgo
+        </label>
+      </div>
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="libra" >
+          <img src="images/libra.jpg" alt="libra">
+          Libra
+        </label>
+      </div>
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="scorpius" >
+          <img src="images/scorpio.jpg" alt="scorpius">
+          Scorpius
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="sagittarius" >
+          <img src="images/sagittarius.jpg" alt="aries">
+          Sagittarius
+        </label>
+      </div>
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="capricorn" >
+          <img src="images/capricorn.jpg" alt="capricorn">
+          Capricorn
+        </label>
+      </div>
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="aquarius" >
+          <img src="images/aquarius.jpg" alt="aquarius">
+          Aquarius
+        </label>
+      </div>
+      <div class=" col-6 col-md-3">
+        <label>
+          <input type="radio" id="zod" name="<%=name%>" value="pisces" checked>
+          <img src="images/pisces.jpg" alt="pisces">
+          Pisces
+        </label>
+      </div>
+  </div>
+
+  <button class="btn btn-lg btn-primary" type="submit"> Continue </button>
+</form>
+
+<p class="link"><a href="/getZodiac">Don't know your Zodiac sign? Click here.</a></p>
+
+<%- include("partials/footer") -%>

@@ -1,0 +1,109 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: #48426d;
+  color: #f0c38e;
+  font-family: "Yusei Magic", sans-serif;
+}
+header h1 {
+  font-family: "Potta One";
+  background-color: #312c51;
+  color: #ddd;
+  padding: 2% 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+}
+p {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+form {
+  margin: 5% auto;
+}
+label {
+  font-size: 2rem;
+}
+[type="radio"] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+[type="radio"] + img {
+  cursor: pointer;
+  width: 90px;
+  border: 7px solid lightgreen;
+  border-radius: 50%;
+}
+[type="radio"]:checked + img {
+  border: none;
+  box-shadow: 0 0 0 10px lightblue;
+  outline-width: 10px;
+  outline-color: transparent;
+}
+.extra-space-for-fixed-footer{
+  height: 50px;
+}
+footer {
+  color: #c1a1d3;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 1%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #312c51;
+}
+
+/****************** Classes *****************/
+.row {
+  margin-bottom: 2%;
+  text-align: left;
+}
+.heading {
+  padding: 3% 0;
+  font-size: 2.5rem;
+}
+.btn {
+  margin: 2% auto;
+}
+.link a {
+  color: #c1a1d3;
+}
+.result {
+  color: lightgreen;
+  font-size: 10rem;
+  margin: 5% auto;
+}
+/* *********************   500px 500px{ *************************** */
+@media screen and (max-width: 500px) {
+  header h1{
+  letter-spacing: 0;
+  padding: 5% 0;
+  font-size: 1.5rem;
+  }
+  label {
+    font-size: 1rem;
+  }
+  .heading {
+    padding: 5% 0;
+    font-size: 1.5rem;
+  }
+  .result {
+    font-size: 5rem;
+  }
+  [type="radio"] + img {
+    width: 50px;
+    border: 3px solid lightgreen;
+    margin-bottom: 5%;
+  }
+  [type="radio"]:checked + img {
+  box-shadow: 0 0 0 6px lightblue;
+  outline-width: 6px;
+  width: 52px;
+  }
+  .link a{
+    font-size: 0.7rem;
+  }
+}

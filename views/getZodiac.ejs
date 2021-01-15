@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+
+<h2 class="heading">
+  What is your date of birth?
+</h2>
+
+<form id="getZodiac" action="/getZodiac" method="POST">
+
+<input name="dOB" type="date"> <br><br>
+<input class="btn btn-lg btn-primary" type="submit" value="Get your Zodiac">
+
+</form>
+
+<%- include("partials/footer") -%>
