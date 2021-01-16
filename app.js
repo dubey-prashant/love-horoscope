@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 
 /////////////////// Home
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("home", {yourZodiac: "Welcome!"});
 });
 
 ////////////////////// Choosing Your Zodiac Start

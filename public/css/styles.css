@@ -22,7 +22,8 @@ form {
   margin: 5% auto;
 }
 label {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin: 3%;
 }
 [type="radio"] {
   width: 0;
@@ -31,7 +32,7 @@ label {
 }
 [type="radio"] + img {
   cursor: pointer;
-  width: 90px;
+  width: 80px;
   border: 7px solid lightgreen;
   border-radius: 50%;
 }
@@ -84,7 +85,7 @@ footer {
   font-size: 1.5rem;
   }
   label {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .heading {
     padding: 5% 0;
@@ -94,14 +95,14 @@ footer {
     font-size: 5rem;
   }
   [type="radio"] + img {
-    width: 50px;
+    width: 45px;
     border: 3px solid lightgreen;
     margin-bottom: 5%;
   }
   [type="radio"]:checked + img {
-  box-shadow: 0 0 0 6px lightblue;
-  outline-width: 6px;
-  width: 52px;
+  box-shadow: 0 0 0 5px lightblue;
+  outline-width: 8px;
+  width: 46px;
   }
   .link a{
     font-size: 0.7rem;
